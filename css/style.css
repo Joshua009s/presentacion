@@ -1,0 +1,52 @@
+/* ===== Reglas base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px 32px;
+  background-color: white;
+  border-bottom: 1px solid #dde3ea;
+}
+
+nav a{
+    margin-left: 16px;
+    text-decoration: none;
+    color: #1e62c9;
+    font-weight: 600;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* ===== Tema oscuro (activado desde JS) ===== */
+body.modo-oscuro {
+  background-color: #0f1115;
+  color: #0f1115;
+}
+
+body.modo-oscuro header,
+body.modo-oscuro .tarjeta {
+  background-color: #171a21;
+}
+
+body.modo-oscuro input {
+  background-color: #0f1115;
+  color: #e8eaed;
+  border-color: #2a2f3a;
+}
